@@ -15,7 +15,7 @@ npm run preview
 
 預覽：http://localhost:4173/2026-tokyo-trip/
 
-瀏覽器測試：`npm run test:ui`。預設使用 `/usr/bin/chromium`，可用 `CHROMIUM_PATH` 指定已安裝的 Chromium。測試 375、768、1440px 的六天頁面、收合、待辦儲存與取消、鍵盤、深連結、儲存不可用降級、外連格式與子路徑資產。截圖輸出 `test-results/`（不提交）。
+瀏覽器測試：`npm run test:ui`。預設使用 `/usr/bin/chromium`，可用 `CHROMIUM_PATH` 指定已安裝的 Chromium。測試 375、759、768、1024、1440px 的六天頁面與全部收合／展開狀態，逐一檢查所有可見文字節點的 computed font-size 至少 18px，並驗證、收合、待辦儲存與取消、鍵盤、深連結、儲存不可用降級、外連格式與子路徑資產。截圖輸出 `test-results/`（不提交）。
 
 ## 內容與隱私
 
