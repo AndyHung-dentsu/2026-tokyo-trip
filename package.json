@@ -1,0 +1,1 @@
+{"name":"tokyo-travel-notebook","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test tests/content.test.mjs","test:ui":"node tests/browser.mjs","preview":"node scripts/serve.mjs"},"devDependencies":{"@playwright/test":"^1.56.1"}}
