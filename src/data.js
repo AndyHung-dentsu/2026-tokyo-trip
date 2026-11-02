@@ -1,3 +1,4 @@
+import {laterDays} from './later-days.js';
 const link=(label,url)=>({label,url});
 const event=(time,title,summary,status='預計',details=[],places=[],links=[])=>({time,title,summary,status,details,places,links});
 export const days=[
@@ -35,7 +36,5 @@ event('14:40 → 15:15','取行李・前往河口湖站','14:40 開始取行李�
 event('15:39 → 17:45','富士回遊 94・返回新宿','班次已選，尚未購票。','待購票',['12/3 車票於 11/3 台灣時間 09:00 開賣，這是提醒，不代表已買。'],[],[link('列車官方資訊','https://www.fujikyu-railway.jp/fujikaiyuu/')]),
 event('約 18:30–19:00','兩國・Pufuka Ryogoku 入住','新宿轉 JR 中央・總武線各站停車至兩國。','已訂住宿',['12/3–6，4 人公寓已訂。確切較晚抵達安排待確認，入住資料表待填；本頁不提供私人表單。'],['両国駅','Pufuka Ryogoku']),
 event('約 19:00','兩國晚餐','餐廳未選，吃完回住宿休息。','待決定')]},
-{date:'12.04',weekday:'五',area:'東京',subtitle:'明治神宮 → 原宿・表參道 → 澀谷（暫定）',note:'尚未詳細規劃；橫濱暫定不去。',tasks:[],events:[]},
-{date:'12.05',weekday:'六',area:'待規劃',subtitle:'Day 5 · 尚未詳細討論',note:'景點、餐食與交通都還未安排。',tasks:[],events:[]},
-{date:'12.06',weekday:'日',area:'成田・高雄',subtitle:'成田 → 高雄',note:'回程草稿：IT281 成田 13:00 → 高雄 16:40，出發前待核對。前往機場交通與其餘行程待規劃。',tasks:[],events:[]}
+...laterDays
 ];
